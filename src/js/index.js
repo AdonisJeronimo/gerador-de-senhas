@@ -11,7 +11,7 @@ function generatePassword() {
 
     const upperCaseChars = "ABCDEFGHJKMNOPQRSTUVWXYZ"
     const numberChars = "123456789"
-    const symbolChars = "?!@&*()[]" // 
+    const symbolChars = "?!@&*()[]"
 
     if (upperCaseCheckEL.checked) {
         chars += upperCaseChars
@@ -32,9 +32,10 @@ function generatePassword() {
         password += chars.substring(randomNumber, randomNumber + 1)
     }
 
-    inputEl.value = password // 
+    inputEl.value = password 
 
     calculateQuality()
+    calculateFontSize()
 }
 
 function calculateQuality() {
@@ -63,10 +64,37 @@ function calculateQuality() {
         securityIndicatorBarEl.classList.remove("warning")
         securityIndicatorBarEl.classList.remove("safe")
     }
+
+    if (percent >= 100){
+        securityIndicatorBarEl.classList.add("completed")
+    }else{
+        securityIndicatorBarEl.classList.remove("completed")
+    }
+}
+
+function calculateFontSize(){
+    if( passwordLength > 45){
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.add("font-xxs")
+    }else if (passwordLength > 32){
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.add("font-xs")
+        inputEl.classList.remove("font-xxs")
+    }else if (passwordLength >22){
+        inputEl.classList.add("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.remove("font-xxs")
+    }else{
+        inputEl.classList.remove("font-sm")
+        inputEl.classList.remove("font-xs")
+        inputEl.classList.remove("font-xxs")
+    }
 }
 
 function copy() {
     navigator.clipboard.writeText(inputEl.value)
+    alert("Anote sua senha, qualquer modificação irá gerar uma nova combinação.")
 }
 
 const passwordLengthEl = document.querySelector("#password-length")
@@ -81,5 +109,6 @@ symbolCheckEL.addEventListener("click", generatePassword)
 
 document.querySelector("#copy-1").addEventListener("click", copy)
 document.querySelector("#copy-2").addEventListener("click", copy)
+document.querySelector("#refresh").addEventListener("click",generatePassword)
 
 generatePassword()

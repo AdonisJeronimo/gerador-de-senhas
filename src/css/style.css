@@ -1,5 +1,5 @@
 body {
-    background-color: #f8fafd;
+    background-color: #000;
     font-family: 'Inter', sans-serif;
     color: #252525;
     padding: 2rem;
@@ -61,6 +61,16 @@ main {
     user-select: none;
 }
 
+.password .text input.font-sm{
+    font-size: 2rem;
+} 
+.password .text input.font-xs{
+    font-size: 1.5rem;
+} 
+.password .text input.font-xxs{
+    font-size: 1rem;
+} 
+
 .password .actions button {
     font-size: 2rem;
     padding: 0 10px;
@@ -76,6 +86,8 @@ main {
     background-color: #ddd;
     border-bottom-left-radius:8px ;
     border-bottom-right-radius:8px ;
+    -webkit-box-reflect: below 1px linear-grafient(transparent, #0005);
+
 }
 
 .security-indicator .bar{
@@ -84,6 +96,7 @@ main {
     border-bottom-right-radius:8px ;
     border-top-right-radius:8px ;
     transition: all 0.2s;
+    
 }
 
 .security-indicator .bar.completed{
@@ -91,16 +104,46 @@ main {
 }
 
 .security-indicator .bar.critical{
-    background-color: red;
+    content: "";
+    inset: 0;
+    background: linear-gradient(90deg, #ff0000, #EB0800, #610301, #610301, #ff0000, #EB0800, #610301, #610301, #ff0000);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: drop-shadow(0 0px 15px #ff0000);
+
 }
 
 .security-indicator .bar.warning{
-    background-color: orange;
+    content: "";
+    inset: 0;
+    background: linear-gradient(90deg, #FF6200, #E05600, #612500, #612500, #FF6200, #E05600, #612500, #612500, #FF6200);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: drop-shadow(0 0px 15px #FF6200);
+
 }
 
 .security-indicator .bar.safe{
-    background-color: green;
+    content: "";
+    inset: 0;
+    background: linear-gradient(90deg, #00ff00, #00A100, #006100, #006100, #00ff00, #00A100, #006100, #006100, #00ff00);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    overflow: hidden;
+    filter: drop-shadow(0 0px 15px #00ff00);
+
 }
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 500% 0;
+    }
+}
+
 
 .customize{
     padding: 1rem 1.5rem;
