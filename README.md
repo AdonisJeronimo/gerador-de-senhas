@@ -3,7 +3,7 @@
 
 ## Seja Bem-vindo(a) !!
 
-Obrigado por visitar meu perfil! :0 
+Obrigado por visitar meu perfil! :0
 <br>
 <br>
 
@@ -11,16 +11,18 @@ Obrigado por visitar meu perfil! :0
 
 <div>
 <p>Conforme a tecnologia avança, novas artimanhas são inventadas ou até mesmo melhoradas com a finalidade de roubas dados de usuários e empresas. Como o matemático britânico Clive Humby disse: <i>“Dados é o novo petróleo”</i> e assim reforçado pelo The Economist em uma publicação: <i>“O recurso mais valioso do mundo não é mais o petróleo, mas sim os dados”</i>.<p>
-<p>Diversas vezes utilizamos as mesmas senhas em várias plataformas e serviços, o que muitos acabam esquecem é que algumas dessas contas podem estar vinculadas a outras de alguma forma, seja por números de telefones ou endereços de e-mails, e com isto em mente levanto um questionamento. Se uma pessoa mal intencionada obtiver acesso a apenas uma de suas senhas, quanto dos seus dados serão comprometidos? <p>
-<p>Como muitas vezes não estamos inspirados o suficiente para criar senhas diferentes daquelas que já estamos habituados, desenvolvi com a ajuda do meu tutor Felipe Fontoura um gerador de senhas completamente aleatório, para se ter ideia, a probabilidade de dois usuários gerarem a mesma senha é de X em Y, aproximadamente. <p>
-<p>Neste gerador de senha, a palavra-chave será exibida uma única vez na tela e ficará disponível pelo tempo necessário desde que não sejam feitas alterações ou que a página seja recarregada. Qualquer modificação irá gerar uma nova senha, por isso ao gerar uma combinação anote-a em algum local de sua preferência ou até mesmo tire um print da tela. <p>
+<p>Como muitas vezes não estamos inspirados o suficiente para criar senhas diferentes daquelas que já estamos habituados, acabamos utilizando as mesmas senhas em várias plataformas e serviços, o que muitos acabam esquecem é que algumas dessas contas/serviços podem estar vinculadas a outras de alguma forma, seja por números de telefones ou endereços de e-mails, e com isto em mente levanto um questionamento. Se uma pessoa mal intencionada obtiver acesso a apenas uma de suas senhas, quanto dos seus dados serão comprometidos? <p>
+
+<p>Com esta ferramenta iremos criar senhas mais aleatórias e complexas do que o normal. A palavra-chave será exibida uma única vez na tela e ficará disponível pelo tempo necessário desde que não sejam feitas alterações ou que a página seja recarregada, o que por consequência acabara gerando uma nova senha aleatória, por isso ao gerar uma combinação anote-a em algum local de sua preferência ou até mesmo tire um print da tela, pois não será mais possível ter acesso a ela.
 <div>
 
-<div style="display: inline_block"> <br>
-<img height="****" width="***" src="****">
+<div style="display: inline_block; text-align: center; font-size: 20px"> <br>
+<img  width="100%" src="src/images/gif-projeto.gif">
+
+ <a href="https://geradordesenhasdevdrone.netlify.app/"><b>Visite o site</b></a>
   </div>
 
-### <b> As senhas geradas não são armazenadas em nenhum local, por isso é impossível realizar qualquer tipo de consulta para visualiza-la novamente </b>
+### <b> As senhas geradas não são armazenadas em nenhum local, por isso é impossível realizar qualquer tipo de consulta afim de visualizar-las novamente. </b>
 
 <br>
 <br>
@@ -41,13 +43,14 @@ Obrigado por visitar meu perfil! :0
  # Futuras implementações
 
  <div>
- <ul><li>Plataforma multi-idiomas.<ul>
- <li>Inglês;</li>
- <li>Espanhol;</li>
- <li>Alemão.</li>
- </ul></li>
- </ul>
+  <ul>
+    <li>Plataforma multi-idiomas.
+      <ul>
+        <li>Inglês;</li>
+        <li>Espanhol;</li>
+        <li>Alemão.</li>
+      </ul>
+    </li>
+    <li>Novas regras estão sendo desenvolvidas para maior fortalecimento das senhas.</li>
+  </ul>
  </div>
- 
-
-

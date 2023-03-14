@@ -32,7 +32,7 @@ function generatePassword() {
         password += chars.substring(randomNumber, randomNumber + 1)
     }
 
-    inputEl.value = password 
+    inputEl.value = password
 
     calculateQuality()
     calculateFontSize()
@@ -112,3 +112,5 @@ document.querySelector("#copy-2").addEventListener("click", copy)
 document.querySelector("#refresh").addEventListener("click",generatePassword)
 
 generatePassword()
+
+
