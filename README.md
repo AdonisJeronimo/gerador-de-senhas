@@ -1,4 +1,4 @@
-#  GERADOR DE SENHAS | ![GitHub](https://img.shields.io/badge/Status-%20development-orange)
+#  GERADOR DE SENHAS | ![GitHub](https://img.shields.io/badge/Status-Finished-green/?style=for-the-badge)
 
 
 ## Seja Bem-vindo(a) !!
@@ -47,10 +47,9 @@ Obrigado por visitar meu perfil! :0
     <li>Plataforma multi-idiomas.
       <ul>
         <li>Inglês;</li>
-        <li>Espanhol;</li>
-        <li>Alemão.</li>
+        <li>Espanhol.</li>
       </ul>
     </li>
-    <li>Novas regras estão sendo desenvolvidas para maior fortalecimento das senhas.</li>
+    <li>Novas regras de geração de senhas estão sendo desenvolvidas, para alcançarmos palavras-chaves cada vez mais forte.</li>
   </ul>
  </div>
